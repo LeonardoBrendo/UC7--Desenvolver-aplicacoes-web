@@ -1,0 +1,2 @@
+
+Aprendendo git/github na prática na turma do curso técnico em desenvolvimento de sistemas.
