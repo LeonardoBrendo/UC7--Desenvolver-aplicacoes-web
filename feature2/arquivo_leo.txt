@@ -1,0 +1,4 @@
+
+Aprendendo git-github na prática na turma do curso técnico em desenvolvimento de sistemas.
+
+O Tiago é um cabra desenrolado no Git.
