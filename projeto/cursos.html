@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cursos</title>
+
+    <style>
+      /* RESET BÁSICO */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* SELETOR DE TAG APENAS */
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #f4f6f8;
+        color: #333;
+        line-height: 1.6;
+      }
+
+      header {
+        background-color: #1e3a8a;
+        color: white;
+        padding: 20px;
+      }
+
+      nav {
+        margin-top: 10px;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        margin-right: 20px;
+        font-weight: bold;
+      }
+
+      nav a:hover {
+        text-decoration: underline;
+      }
+
+      main {
+        padding: 30px;
+      }
+
+      section {
+        background-color: white;
+        margin: 0 200px;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    h1 {
+        margin-bottom: 10px;
+    }
+    
+    h2 {
+        margin-bottom: 15px;
+        color: #1e3a8a;
+    }
+    
+    article {
+        display:flex;
+        background-color: white;
+        margin-bottom: 15px;
+        border: 1px solid #cccccc;
+        border-radius: 8px;
+        padding: 15px 20px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+
+      }
+      div {
+        display: flex;
+        flex-direction: column;
+      }
+
+      form {
+        display: block;
+      }
+
+      fieldset {
+        border: 1px solid #ccc;
+        padding: 20px;
+        border-radius: 6px;
+      }
+
+      legend {
+        font-weight: bold;
+        color: #1e3a8a;
+        padding: 0 10px;
+      }
+
+      label {
+        display: block;
+        margin-top: 15px;
+        font-weight: bold;
+      }
+
+      input {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      img{
+        height: 200px;
+        border-radius: 8px;
+        margin-right: 20px;
+      }
+
+      span img{
+        height: 16px;
+        margin: 0 5px 0 0;
+      }
+
+      button {
+        margin-top: 20px;
+        margin-left: auto;
+        padding: 12px 20px;
+        border: none;
+        background-color: #1e3a8a;
+        color: white;
+        font-size: 16px;
+        border-radius: 6px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #162d6b;
+      }
+
+
+      footer {
+        background-color: #1e3a8a;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        margin-top: 30px;
+      }
+
+      aside {
+        background-color: #e0e7ff;
+        padding: 15px;
+        border-radius: 6px;
+        margin-top: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Sistema de Cadastro de Usuários</h1>
+      <nav>
+        <a href="index.html">Dashboard</a>
+        <a href="#">Cadastrar</a>
+        <a href="#">Usuários</a>
+        <a href="#">Relatórios</a>
+        <a href="cursos.html">Cursos</a>
+      </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Nossos Cursos</h2>
+            <article>
+                <div>
+                    <img src="imagens/manutencao-celular.jpg" alt="Jovem usando óculos de realidade aumentada segurando um controle de video-game de fente para teclado e monitor ilumidados.">
+                </div>
+                <div>
+                    <h3>Manutenção de Smartphones</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi cupiditate eveniet distinctio harum molestiae est non, maxime quam! Velit necessitatibus qui nisi cumque aperiam modi omnis quos praesentium fuga? Dolorem, quisquam quos cupiditate tenetur mollitia eligendi id ab modi, distinctio temporibus cumque, minus delectus.</p>
+                    <p><span><img src="imagens/relogio-icon.png" alt=""></span>Carga horária: 100h</p>
+                    <button>Turmas disponíveis</button>
+                </div>
+            </article>
+
+            <article>
+                <div>
+                    <img src="imagens/engenharia-prompt.jpg" alt="">
+                </div>
+                <div>
+                    <h3>Engenharia de Prompt: Fazendo a Ia Responder O Que Você Quer</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi cupiditate eveniet distinctio harum molestiae est non, maxime quam! Velit necessitatibus qui nisi cumque aperiam modi omnis quos praesentium fuga? Dolorem, quisquam quos cupiditate tenetur mollitia eligendi id ab modi, distinctio temporibus cumque, minus delectus.</p>
+                    <p><span><img src="imagens/relogio-icon.png" alt=""></span>Carga horária: 100h</p>
+                    <button>Turmas disponíveis</button>
+                </div>
+            </article>
+
+            <article>
+                <div>
+                    <img src="imagens/programacao-python.jpg" alt="">
+                </div>
+                <div>
+                    <h3>Formação - Programação em Python</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi cupiditate eveniet distinctio harum molestiae est non, maxime quam! Velit necessitatibus qui nisi cumque aperiam modi omnis quos praesentium fuga? Dolorem, quisquam quos cupiditate tenetur mollitia eligendi id ab modi, distinctio temporibus cumque, minus delectus.</p>
+                    <p><span><img src="imagens/relogio-icon.png" alt=""></span>Carga horária: 100h</p>
+                    <button>Turmas disponíveis</button>
+                </div>
+            </article>
+
+            <article>
+                <div>
+                    <img src="imagens/design-vendas.jpg" alt="">
+                </div>
+                <div>
+                    <h3>Design Thinking Aplicado a Vendas</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi cupiditate eveniet distinctio harum molestiae est non, maxime quam! Velit necessitatibus qui nisi cumque aperiam modi omnis quos praesentium fuga? Dolorem, quisquam quos cupiditate tenetur mollitia eligendi id ab modi, distinctio temporibus cumque, minus delectus.</p>
+                    <p><span><img src="imagens/relogio-icon.png" alt=""></span>Carga horária: 100h</p>
+                    <button>Turmas disponíveis</button>
+                </div>
+            </article>
+
+            <article>
+                <div>
+                    <img src="imagens/excel-copilot.jpg" alt="">
+                </div>
+                <div>
+                    <h3>Excel Avançado com IA Copilot</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi cupiditate eveniet distinctio harum molestiae est non, maxime quam! Velit necessitatibus qui nisi cumque aperiam modi omnis quos praesentium fuga? Dolorem, quisquam quos cupiditate tenetur mollitia eligendi id ab modi, distinctio temporibus cumque, minus delectus.</p>
+                    <p><span><img src="imagens/relogio-icon.png" alt=""></span>Carga horária: 100h</p>
+                    <button>Turmas disponíveis</button>
+                </div>
+            </article>
+
+            <article>
+                <div>
+                    <img src="imagens/montador-computador.jpg" alt="">
+                </div>
+                <div>
+                    <h3>Montador e Reparador de Computador</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi cupiditate eveniet distinctio harum molestiae est non, maxime quam! Velit necessitatibus qui nisi cumque aperiam modi omnis quos praesentium fuga? Dolorem, quisquam quos cupiditate tenetur mollitia eligendi id ab modi, distinctio temporibus cumque, minus delectus.</p>
+                    <p><span><img src="imagens/relogio-icon.png" alt=""></span>Carga horária: 100h</p>
+                    <button>Turmas disponíveis</button>
+                </div>
+            </article>
+
+
+        </section>
+    </main>
+
+
+
+
+
+    <footer>
+      <p>Sistema HTML Semântico + CSS (Apenas Seletor de Tag) © 2026</p>
+    </footer>
+  </body>
+</html>
