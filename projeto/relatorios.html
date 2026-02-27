@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Cadastro: Relatórios</title>
+</head>
+<body>
+        <style>
+      /* RESET BÁSICO */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* SELETOR DE TAG APENAS */
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #f4f6f8;
+        color: #333;
+        line-height: 1.6;
+      }
+
+      header {
+        background-color: #1e3a8a;
+        color: white;
+        padding: 20px;
+      }
+
+      nav {
+        margin-top: 10px;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        margin-right: 20px;
+        font-weight: bold;
+      }
+
+      nav a:hover {
+        text-decoration: underline;
+      }
+
+      main {
+        padding: 30px;
+      }
+
+      section {
+        background-color: white;
+        padding: 20px;
+        margin-bottom: 25px;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      h1 {
+        margin-bottom: 10px;
+      }
+
+      h2 {
+        margin-bottom: 15px;
+        color: #1e3a8a;
+      }
+
+      article {
+        margin-bottom: 15px;
+      }
+
+      form {
+        display: block;
+      }
+
+      fieldset {
+        border: 1px solid #ccc;
+        padding: 20px;
+        border-radius: 6px;
+      }
+
+      legend {
+        font-weight: bold;
+        color: #1e3a8a;
+        padding: 0 10px;
+      }
+
+      label {
+        display: block;
+        margin-top: 15px;
+        font-weight: bold;
+      }
+
+      input {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      select {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+      }
+
+      button {
+        margin-top: 20px;
+        padding: 12px 20px;
+        border: none;
+        background-color: #1e3a8a;
+        color: white;
+        font-size: 16px;
+        border-radius: 6px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #162d6b;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 15px;;
+      }
+
+      thead {
+        background-color: #1e3a8a;
+        color: white;
+      }
+
+      th {
+        padding: 12px;
+        text-align: left;
+      }
+
+      td {
+        padding: 12px;
+        border-bottom: 1px solid #ddd;
+      }
+
+      tbody tr:hover {
+        background-color: #f1f5f9;
+      }
+
+      footer {
+        background-color: #1e3a8a;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        margin-top: 30px;
+      }
+
+      aside {
+        background-color: #e0e7ff;
+        padding: 15px;
+        border-radius: 6px;
+        margin-top: 15px;
+      }
+    </style>
+
+    <header>
+        <h1>Sistema de Cadastro de Usuários</h1>
+        <nav>
+            <a href="index.html">Dashboard</a>
+            <a href="#">Cadastrar</a>
+            <a href="#">Usuários</a>
+            <a href="relatorios.html">Relatórios</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Relatórios do sistema em 2026</h2>
+            <article name="relatorio-alunos">
+                <h3>Relatório dos Melhores Alunos em janeiro</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Idade</th>
+                            <th>Curso</th>
+                            <th>status</th>
+                            <th>media</th>
+                            <th>Faltas</th>
+                            <th>Data de Cadastro</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>João Silva</td>
+                            <td>22</td>
+                            <td>Manutenção de smartphones</td>
+                            <td>Ativo</td>
+                            <td>8.5</td>
+                            <td>2</td>
+                            <td>10/01/2026</td>
+                        </tr>
+                        <tr>
+                            <td>Maria Oliveira</td>
+                            <td>24</td>
+                            <td>Design aplicado a vendas</td>
+                            <td>Ativo</td>
+                            <td>9.0</td>
+                            <td>0</td>
+                            <td>04/01/2026</td>
+                        </tr>
+                        <tr>
+                            <td>Carlos Santos</td>
+                            <td>21</td>
+                            <td>Excel avançado com ia</td>
+                            <td>Inativo</td>
+                            <td>9.0</td>
+                            <td>5</td>
+                            <td>03/01/2026</td>
+                        </tr>
+                            <td>Ana Costa</td>
+                            <td>23</td>
+                            <td>programação em python</td>
+                            <td>Ativo</td>
+                            <td>9.0</td>
+                            <td>1</td>
+                            <td>01/01/2026</td>
+                        </tr>
+                        <tr>
+                            <td>Lúcia Ferreira</td>
+                            <td>25</td>
+                            <td>montador e reparador de computador</td>
+                            <td>Ativo</td>
+                            <td>10.0</td>
+                            <td>0</td>
+                            <td>04/01/2026</td>
+                        </tr>
+                        <tr>
+                            <td>Pedro Almeida</td>
+                            <td>22</td>
+                            <td>engenharia de prompt</td>
+                            <td>Inativo</td>
+                            <td>8.5</td>
+                            <td>3</td>
+                            <td>02/01/2026</td>
+                    </tbody>
+                </table>
+            </article>
+
+            <article name="relatorio de turmas">
+                <h3>Relatório de turmas em janeiro</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Curso</th>
+                            <th>Turma</th>
+                            <th>Turno</th>
+                            <th>Quantidade de Alunos</th>
+                            <th>Data de Início</th>
+                            <th>media da turma</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Manutenção de smartphones</td>
+                            <td>A</td>
+                            <td>manhã</td>
+                            <td>21</td>
+                            <td>10/01/2026</td>
+                            <td>8.5</td>
+                        </tr>
+                        <tr>
+                            <td>Manutenção de smartphones</td>
+                            <td>B</td>
+                            <td>tarde</td>
+                            <td>31</td>
+                            <td>12/01/2026</td>
+                            <td>8.0</td>
+                        </tr>
+                        <tr>
+                            <td>Manutenção de smartphones</td>
+                            <td>C</td>
+                            <td>noite</td>
+                            <td>30</td>
+                            <td>10/01/2026</td>
+                            <td>7.5</td>
+                        </tr>
+                        <tr>
+                            <td>engenharia de prompt</td>
+                            <td>A</td>
+                            <td>manhã</td>
+                            <td>36</td>
+                            <td>04/01/2026</td>
+                            <td>9.0</td>
+                        </tr>
+                        <tr>
+                            <td>engenharia de prompt</td>
+                            <td>B</td>
+                            <td>tarde</td>
+                            <td>27</td>
+                            <td>01/01/2026</td>
+                            <td>8.5</td>
+                        </tr>
+                        <tr>
+                            <td>engenharia de prompt</td>
+                            <td>C</td>
+                            <td>noite</td>
+                            <td>25</td>
+                            <td>02/01/2026</td>
+                            <td>7.0</td>
+                        </tr>
+                        <tr>
+                            <td>Programação em python</td>
+                            <td>A</td>
+                            <td>manhã</td>
+                            <td>24</td>
+                            <td>03/01/2026</td>
+                            <td>6.5</td>
+                        </tr>
+                        <tr>
+                            <td>Programação em python</td>
+                            <td>B</td>
+                            <td>tarde</td>
+                            <td>30</td>
+                            <td>05/01/2026</td>
+                            <td>6.0</td>
+                        </tr>
+                        <tr>
+                            <td>Programação em python</td>
+                            <td>C</td>
+                            <td>noite</td>
+                            <td>32</td>
+                            <td>06/01/2026</td>
+                            <td>9.0</td>
+                        </tr>
+                        <tr>
+                            <td>Design aplicado a vendas</td>
+                            <td>A</td>
+                            <td>manhã</td>
+                            <td>21</td>
+                            <td>01/01/2026</td>
+                            <td>9.0</td>
+                        </tr>
+                        <tr>
+                            <td>Design aplicado a vendas</td>
+                            <td>B</td>
+                            <td>tarde</td>
+                            <td>23</td>
+                            <td>01/01/2026</td>
+                            <td>8.5</td>
+                        </tr>
+                        <tr>
+                            <td>Design aplicado a vendas</td>
+                            <td>C</td>
+                            <td>noite</td>
+                            <td>35</td>
+                            <td>02/01/2026</td>
+                            <td>8.0</td>
+                        </tr>
+                        <tr>
+                            <td>Excel avançado com ia</td>
+                            <td>A</td>
+                            <td>manhã</td>
+                            <td>26</td>
+                            <td>04/01/2026</td>
+                            <td>9.0</td>
+                        </tr>
+                        <tr>
+                            <td>Excel avançado com ia</td>
+                            <td>B</td>
+                            <td>tarde</td>
+                            <td>20</td>
+                            <td>06/01/2026</td>
+                            <td>8.5</td>
+                        </tr>
+                        <tr>
+                            <td>Excel avançado com ia</td>
+                            <td>C</td>
+                            <td>noite</td>
+                            <td>28</td>
+                            <td>06/01/2026</td>
+                            <td>8.5</td>
+                        </tr>
+                        <tr>
+                            <td>Montador e reparador de computador</td>
+                            <td>A</td>
+                            <td>manhã</td>
+                            <td>29</td>
+                            <td>07/01/2026</td>
+                            <td>9.0</td>    
+                        </tr>
+                        <tr>
+                            <td>Montador e reparador de computador</td>
+                            <td>B</td>
+                            <td>tarde</td>
+                            <td>22</td>
+                            <td>08/01/2026</td>
+                            <td>8.0</td>
+                        </tr>
+                        <tr>
+                            <td>Montador e reparador de computador</td>
+                            <td>C</td>
+                            <td>noite</td>
+                            <td>24</td>
+                            <td>09/01/2026</td>
+                            <td>7.5</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Sistema HTML Semântico + CSS (Apenas Seletor de Tag) © 2026</p>
+    </footer>
+</body>
+</html>
