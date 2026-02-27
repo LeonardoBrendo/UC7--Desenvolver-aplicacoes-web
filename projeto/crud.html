@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página CRUD</title>
+    <style>
+      /* RESET BÁSICO */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* SELETOR DE TAG APENAS */
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #f4f6f8;
+        color: #333;
+        line-height: 1.6;
+      }
+
+      header {
+        background-color: #1e3a8a;
+        color: white;
+        padding: 20px;
+      }
+
+      nav .menu {
+        margin-top: 10px;
+      }
+
+      nav .menu a {
+        color: white;
+        text-decoration: none;
+        margin-right: 20px;
+        font-weight: bold;
+      }
+
+      nav a:hover {
+        text-decoration: underline;
+      }
+
+      main {
+        padding: 30px;
+      }
+
+      footer {
+        background-color: #1e3a8a;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        margin-top: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Sistema de Cadastro de Usuários</h1>
+      <nav class="menu">
+        <a href="#">Dashboard</a>
+        <a href="#">Cadastrar</a>
+        <a href="#">Usuários</a>
+        <a href="#">Relatórios</a>
+      </nav>
+    </header>
+
+    <main class="container">
+      <input type="radio" name="tabs" id="tab-create" checked />
+      <input type="radio" name="tabs" id="tab-read" />
+      <input type="radio" name="tabs" id="tab-update" />
+      <input type="radio" name="tabs" id="tab-delete" />
+
+      <nav class="tabs">
+        <label for="tab-create">Criar</label>
+        <label for="tab-read">Consultar</label>
+        <label for="tab-create">Atualizar</label>
+        <label for="tab-create">Deletar</label>
+      </nav>
+
+      <section class="content" id="create"></section>
+
+      <section class="content" id="read"></section>
+
+      <section class="content" id="update"></section>
+
+      <section class="content" id="delete"></section>
+    </main>
+
+    <footer>
+      <p>Sistema HTML Semântico + CSS (Apenas Seletor de Tag) © 2026</p>
+    </footer>
+  </body>
+</html>
