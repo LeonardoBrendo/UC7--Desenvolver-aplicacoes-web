@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuarios</title>
+    <style>
+        /* RESET BÁSICO */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* SELETOR DE TAG APENAS */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f6f8;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #1e3a8a;
+            color: white;
+            padding: 20px;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 30px;
+        }
+
+        section {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            margin-bottom: 15px;
+            color: #1e3a8a;
+        }
+
+        article {
+            margin-bottom: 15px;
+        }
+
+        form {
+            display: block;
+        }
+
+        fieldset {
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 6px;
+        }
+
+        legend {
+            font-weight: bold;
+            color: #1e3a8a;
+            padding: 0 10px;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 12px 20px;
+            border: none;
+            background-color: #1e3a8a;
+            color: white;
+            font-size: 16px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #162d6b;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        thead {
+            background-color: #1e3a8a;
+            color: white;
+        }
+
+        th {
+            padding: 12px;
+            text-align: left;
+        }
+
+        td {
+            padding: 12px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        tbody tr:hover {
+            background-color: #f1f5f9;
+        }
+
+        footer {
+            background-color: #1e3a8a;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+
+        aside {
+            background-color: #e0e7ff;
+            padding: 15px;
+            border-radius: 6px;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 style="text-align: center;">Sistema de Cadastro de Usuários</h1>
+        <nav style="text-align: center;">
+            <a href="#">Dashboard</a>
+            <a href="#">Cadastrar</a>
+            <a href="#">Usuários</a>
+            <a href="#">Relatórios</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Usuários</h2>
+            <article>
+                <h3>Aqui você pode visualizar os usuários ativos</h3>
+            </article>
+
+            <h2>Registros</h2>
+            <aside>
+                <p style="color: green;">Total de usuários ativos: 15</p>
+                <p style="color: red;">Total de usuários inativos: 5</p>
+                <br>
+                <p>Total de usuários cursando Tec. de desenvolvimento de sistema: 10</p>
+                <p>Total de usuários cursando Tec. em gastronomia: 3</p>
+                <p>Total de usuários cursando Tec. em logistica logística: 2</p>
+            </aside>
+        </section>
+        <section>
+            <h2>Lista de Usuarios Ativos</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Email</th>
+                        <th>Curso</th>
+                        <th>Status</th>
+                        <th>Data de inicio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ana</td>
+                        <td>ana@gmail.com</td>
+                        <td>tec. desenvolvimento de sistemas</td>
+                        <td style="color: green;">Ativo</td>
+                        <td>20/01/2026</td>
+                    </tr>
+                    <tr>
+                        <td>Pedro</td>
+                        <td>pedro@gmail.com</td>
+                        <td>tec. desenvolvimento de sistemas</td>
+                        <td style="color: green;">Ativo</td>
+                        <td>05/01/2026</td>
+                    </tr>
+                    <tr>
+                        <td>Luis</td>
+                        <td>luis@gmail.com</td>
+                        <td>tec. desenvolvimento de sistemas</td>
+                        <td style="color: green;">Ativo</td>
+                        <td>05/01/2026</td>
+                    </tr>
+                    <tr>
+                        <td>Clara</td>
+                        <td>clara@gmail.com</td>
+                        <td>tec. desenvolvimento de sistemas</td>
+                        <td style="color: green;">Ativo</td>
+                        <td>05/01/2026</td>
+                    </tr>
+                    <tr>
+                        <td>Claudia</td>
+                        <td>claudia@gmail.com</td>
+                        <td>tec. desenvolvimento de sistemas</td>
+                        <td style="color: green;">Ativo</td>
+                        <td>20/01/2026</td>
+                    </tr>
+                    <tr>
+                        <td>Fábio</td>
+                        <td>fabio@gmail.com</td>
+                        <td>tec. desenvolvimento de sistemas</td>
+                        <td style="color: green;">Ativo</td>
+                        <td>20/01/2026</td>
+                    </tr>
+                    <tr>
+                        <td>Marina</td>
+                        <td>marina@gmail.com</td>
+                        <td>tec. desenvolvimento de sistemas</td>
+                        <td style="color: green;">Ativo</td>
+                        <td>20/01/2026</td>
+                    </tr>
+                    <tr>
+                        <td>Kaique</td>
+                        <td>kaique@gmail.com</td>
+                        <td>tec. desenvolvimento de sistemas</td>
+                        <td style="color: green;">Ativo</td>
+                        <td>20/01/2026</td>
+                    </tr>
+                    <tr>
+                        <td>Henrique</td>
+                        <td>henrique@gmail.com</td>
+                        <td>tec. desenvolvimento de sistemas</td>
+                        <td style="color: green;">Ativo</td>
+                        <td>05/01/2026</td>
+                    </tr>
+                    <tr>
+                        <td>Claudionor</td>
+                        <td>claudionor@gmail.com</td>
+                        <td>tec. desenvolvimento de sistemas</td>
+                        <td style="color: green;">Ativo</td>
+                        <td>05/01/2026</td>
+                    </tr>
+                    <tr>
+                        <td>Claudionor</td>
+                        <td>claudionor@gmail.com</td>
+                        <td>tec. em gastronomia</td>
+                        <td style="color: green;">Ativo</td>
+                        <td>10/02/2026</td>
+                    </tr>
+                    <tr>
+                        <td>Luis</td>
+                        <td>luis@gmail.com</td>
+                        <td>tec. em gastronomia</td>
+                        <td style="color: green;">Ativo</td>
+                        <td>10/02/2026</td>
+                    </tr>
+                    <tr>
+                        <td>Claudia</td>
+                        <td>claudianor@gmail.com</td>
+                        <td>tec. em gastronomia</td>
+                        <td style="color: green;">Ativo</td>
+                        <td>10/02/2026</td>
+                    </tr>
+                    <tr>
+                        <td>Tereza</td>
+                        <td>tereza@gmail.com</td>
+                        <td>tec. em logistica</td>
+                        <td style="color: green;">Ativo</td>
+                        <td>10/02/2026</td>
+                    </tr>
+                    <tr>
+                        <td>Gustavo</td>
+                        <td>Gustavo@gmail.com</td>
+                        <td>tec. em logistica</td>
+                        <td style="color: green;">Ativo</td>
+                        <td>10/02/2026</td>
+                    </tr>
+
+
+                    <tr>
+                        <td>Vitor</td>
+                        <td>vitor@gmail.com</td>
+                        <td>tec. em logistica</td>
+                        <td style="color: red;">Inativo</td>
+                        <td>10/02/2026</td>
+                    </tr>
+                    <tr>
+                        <td>Paulo</td>
+                        <td>paulo@gmail.com</td>
+                        <td>tec. em logistica</td>
+                        <td style="color: red;">Inativo</td>
+                        <td>10/02/2026</td>
+                    </tr>
+                    <tr>
+                        <td>Lizandro</td>
+                        <td>lizandro@gmail.com</td>
+                        <td>tec. em logistica</td>
+                        <td style="color: red;">Inativo</td>
+                        <td>10/02/2026</td>
+                    </tr>
+                    <tr>
+                        <td>João</td>
+                        <td>joao@gmail.com</td>
+                        <td>tec. em gastronomia</td>
+                        <td style="color: red;">Inativo</td>
+                        <td>10/02/2026</td>
+                    </tr>
+                    <tr>
+                        <td>Bianca</td>
+                        <td>bianca@gmail.com</td>
+                        <td>tec. em gastronomia</td>
+                        <td style="color: red;">Inativo</td>
+                        <td>10/02/2026</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Registro de Usuários</h2>
+            <article>
+                <h3>Aqui você pode registrar novos usuários</h3>
+            </article>
+            <form>
+                <fieldset>
+                    <legend>Dados do Usuário</legend>
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" placeholder="Digite seu nome:">
+
+                    <label for="genero">Gênero</label>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Digite seu email:">
+
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" placeholder="Digite sua senha:">
+
+                    <label for="senha">Confirme sua senha</label>
+                    <input type="password" id="senha" placeholder="Confirme sua senha:">
+                    
+                    <label for="cidade">Cidade</label>
+                    <select id="cidade">
+                    <option value="">Selecione sua cidade</option>
+                    <option value="FORT">Fortaleza</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    </select>
+
+                    <label for="curso">Curso</label>
+                    <select id="curso">
+                        <option value="">Selecione um curso</option>
+                        <option value="desenvolvimento">Tec. de desenvolvimento de sistemas</option>
+                        <option value="gastronomia">Tec. em gastronomia</option>
+                        <option value="logistica">Tec. em logística</option>
+                    </select>
+
+                    <button type="submit">Cadastrar Usuário</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+</body>
+
+</html>
