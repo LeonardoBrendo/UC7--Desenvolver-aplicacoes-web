@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistema de Cadastro</title>
+
+    <style>
+      /* RESET BÁSICO */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* SELETOR DE TAG APENAS */
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #f4f6f8;
+        color: #333;
+        line-height: 1.6;
+      }
+
+      header {
+        background-color: #1e3a8a;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        
+
+      }
+
+      nav {
+        margin-top: 10px;
+        
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        margin-right: 20px;
+        font-weight: bold;
+        
+      }
+
+      nav a:hover {
+        text-decoration: underline;
+      }
+
+      main {
+        padding: 30px;
+      }
+
+      section {
+        background-color: white;
+        padding: 20px;
+        margin-bottom: 25px;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      h1 {
+        margin-bottom: 10px;
+      }
+
+      h2 {
+        margin-bottom: 15px;
+        color: #1e3a8a;
+        text-align: center;
+      }
+
+      article {
+        margin-bottom: 15px;
+      }
+
+      form {
+        display: block;
+      }
+
+      fieldset {
+        border: 1px solid #ccc;
+        padding: 20px;
+        border-radius: 6px;
+      }
+
+      legend {
+        font-weight: bold;
+        color: #1e3a8a;
+        padding: 0 10px;
+      }
+
+      label {
+        display: block;
+        margin-top: 15px;
+        font-weight: bold;
+      }
+
+      input {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      select {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+      }
+
+      button {
+        margin-top: 20px;
+        padding: 12px 20px;
+        border: none;
+        background-color: #1e3a8a;
+        color: white;
+        font-size: 16px;
+        border-radius: 6px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #162d6b;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 15px;
+      }
+
+      thead {
+        background-color: #1e3a8a;
+        color: white;
+      }
+
+      th {
+        padding: 12px;
+        text-align: left;
+      }
+
+      td {
+        padding: 12px;
+        border-bottom: 1px solid #ddd;
+      }
+
+      tbody tr:hover {
+        background-color: rgba(15, 90, 165, 0.411);
+      }
+
+      tbody tr:hover td:first-child {
+      color: #1e3a8a;
+      font-weight: bold;
+     }
+
+      footer {
+        background-color: #1e3a8a;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+      }
+
+      aside {
+        background-color: #e0e7ff;
+        padding: 15px;
+        border-radius: 6px;
+        margin-top: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Sistema de Cadastro de Usuários</h1>
+      <nav>
+        <a href="#">Dashboard</a>
+        <a href="#">Cadastrar</a>
+        <a href="#">Usuários</a>
+        <a href="#">Relatórios</a>
+      </nav>
+    </header>
+
+    <main>
+      
+      <!-- TABELA DE USUÁRIOS -->
+      <section>
+        <h2>Lista de Turmas</h2>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Cursos</th>
+              <th>Turma</th>
+              <th>Turno</th>
+              <th>Datas</th>
+              <th>Cidade</th>
+              <th>Vagas</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Manutenção de smartphones</td>
+              <td>A</td>
+              <td>Manhã</td>
+              <td>01/02/2026</td>
+              <td>Fortaleza</td>
+              <td style="color: green;">aberto</td> 
+            </tr>
+            <tr>
+                <td>Manutenção de smartphones</td>
+                <td>B</td>
+                <td>Tarde</td>
+                <td>01/02/2026</td>
+                <td>Fortaleza</td>
+                <td style="color: red;">fechado</td> 
+              </tr>
+            <tr>
+            <tr>
+                <td>Manutenção de smartphones</td>
+                <td>C</td>
+                <td>Noite</td>
+                <td>01/02/2026</td>
+                <td>Fortaleza</td>
+                <td style="color: red;">fechado</td> 
+                </tr>
+            <tr>
+                <td>Engenharia de Prompt</td>
+                <td>A</td>
+                <td>Manhã</td>
+                <td>01/02/2026</td>
+                <td>Fortaleza</td>
+                <td style="color: green;">aberto</td> 
+            </tr>
+            <tr>
+                <td>Engenharia de Prompt</td>
+                <td>B</td>
+                <td>Tarde</td>
+                <td>01/02/2026</td>
+                <td>Fortaleza</td>
+                <td style="color:red">fechado</td> 
+            </tr>
+            <tr>
+                <td>Engenharia de Prompt</td>
+                <td>C</td>
+                <td>Noite</td>
+                <td>01/02/2026</td>
+                <td>Fortaleza</td>
+                <td style="color: green;">aberto</td> 
+                </tr>
+            <tr>
+                <td>Programação em python</td>
+                <td>A</td>
+                <td>Manhã</td>
+                <td>01/02/2026</td>
+                <td>Fortaleza</td>
+                <td style="color: red;">aberto</td> 
+            </tr>
+            <tr>
+                <td>Programação em python</td>
+                <td>B</td>
+                <td>Tarde</td>
+                <td>01/02/2026</td>
+                <td>Fortaleza</td>
+                <td style="color: red;">aberto</td> 
+            </tr>
+            <tr>
+                <td>Programação em python</td>
+                <td>C</td>
+                <td>Noite</td>
+                <td>01/02/2026</td>
+                <td>Fortaleza</td>
+                <td style="color: red;">aberto</td> 
+            </tr>
+            <tr>
+                <td>Design aplicado em vendas</td>
+                <td>A</td>
+                <td>Manhã</td>
+                <td>01/02/2026</td>
+                <td>Fortaleza</td>
+                <td style="color: green;">aberto</td> 
+            </tr>
+            <tr>
+                <td>Design aplicado em vendas</td>
+                <td>B</td>
+                <td>Tarde</td>
+                <td>01/02/2026</td>
+                <td>Fortaleza</td>
+                <td style="color: red;">fechado</td> 
+            </tr>
+            <tr>
+                <td>Design aplicado em vendas</td>
+                <td>C</td>
+                <td>Noite</td>
+                <td>01/02/2026</td>
+                <td>Fortaleza</td>
+                <td style="color: green;">aberto</td> 
+            </tr>
+            <tr>
+                <td>Excel avançado com ia copilot</td>
+                <td>A</td>
+                <td>Manhã</td>
+                <td>01/02/2026</td>
+                <td>Fortaleza</td>
+                <td style="color: green;">aberto</td> 
+            </tr>
+            <tr>
+                <td>Excel avançado com ia copilot</td>
+                <td>B</td>
+                <td>Tarde</td>
+                <td>01/02/2026</td>
+                <td>Fortaleza</td>
+                <td style="color: red;">fechado</td> 
+            </tr>
+            <tr>
+                <td>Excel avançado com ia copilot</td>
+                <td>C</td>
+                <td>Noite</td>
+                <td>01/02/2026</td>
+                <td>Fortaleza</td>
+                <td style="color: green;">aberto</td> 
+            </tr>
+            <tr>
+                <td>Montador e reparador de computadores</td>
+                <td>A</td>
+                <td>Manhã</td>
+                <td>01/02/2026</td>
+                <td>Fortaleza</td>
+                <td style="color: green;">aberto</td> 
+              </tr>
+              <tr>
+                <td>Montador e reparador de computadores</td>
+                <td>B</td>
+                <td>Tarde</td>
+                <td>01/02/2026</td>
+                <td>Fortaleza</td>
+                <td style="color: red;">fechado</td> 
+              </tr>
+              <tr>
+                <td>Montador e reparador de computadores</td>
+                <td>C</td>
+                <td>Noite</td>
+                <td>01/02/2026</td>
+                <td>Fortaleza</td>
+                <td style="color: red;">fechado</td> 
+              </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <footer>
+      <p>Sistema HTML Semântico + CSS (Apenas Seletor de Tag) © 2026</p>
+    </footer>
+  </body>
+</html>
