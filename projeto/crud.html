@@ -1,18 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
+    <!-- Configurações básicas do documento -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Página CRUD</title>
+    <title>Página CRUD - Sistema de Usuários</title>
+
     <style>
-      /* RESET BÁSICO */
+      /* ================================
+         RESET BÁSICO
+      ================================= */
       * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
       }
 
-      /* SELETOR DE TAG APENAS */
+      /* ================================
+         ESTILO GLOBAL
+      ================================= */
       body {
         font-family: Arial, Helvetica, sans-serif;
         background-color: #f4f6f8;
@@ -26,11 +32,11 @@
         padding: 20px;
       }
 
-      nav .menu {
+      nav {
         margin-top: 10px;
       }
 
-      nav .menu a {
+      nav a {
         color: white;
         text-decoration: none;
         margin-right: 20px;
@@ -45,6 +51,61 @@
         padding: 30px;
       }
 
+      section {
+        background-color: white;
+        padding: 20px;
+        margin-bottom: 25px;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      h1 {
+        margin-bottom: 10px;
+      }
+
+      h2 {
+        margin-bottom: 15px;
+        color: #1e3a8a;
+      }
+
+      form {
+        display: block;
+      }
+
+      label {
+        display: block;
+        margin-top: 15px;
+        font-weight: bold;
+      }
+
+      input {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      button {
+        margin-top: 20px;
+        padding: 12px 20px;
+        border: none;
+        background-color: #1e3a8a;
+        color: white;
+        font-size: 16px;
+        border-radius: 6px;
+        cursor: pointer;
+      }
+
+      div {
+        display: flex;
+        justify-content: flex-end;
+      }
+
+      button:hover {
+        background-color: #162d6b;
+      }
+
       footer {
         background-color: #1e3a8a;
         color: white;
@@ -54,10 +115,14 @@
       }
     </style>
   </head>
+
   <body>
+    <!-- ================================
+         CABEÇALHO DO SISTEMA
+    ================================= -->
     <header>
       <h1>Sistema de Cadastro de Usuários</h1>
-      <nav class="menu">
+      <nav>
         <a href="#">Dashboard</a>
         <a href="#">Cadastrar</a>
         <a href="#">Usuários</a>
@@ -65,28 +130,88 @@
       </nav>
     </header>
 
-    <main class="container">
-      <input type="radio" name="tabs" id="tab-create" checked />
-      <input type="radio" name="tabs" id="tab-read" />
-      <input type="radio" name="tabs" id="tab-update" />
-      <input type="radio" name="tabs" id="tab-delete" />
+    <!-- ================================
+         CONTEÚDO PRINCIPAL
+    ================================= -->
+    <main>
+      <!-- SEÇÃO: CRIAR USUÁRIO -->
+      <section>
+        <h2>Criar Usuário</h2>
+        <form>
+          <label
+            >Nome Completo:
+            <input type="text" required placeholder="Digite o nome" />
+          </label>
 
-      <nav class="tabs">
-        <label for="tab-create">Criar</label>
-        <label for="tab-read">Consultar</label>
-        <label for="tab-create">Atualizar</label>
-        <label for="tab-create">Deletar</label>
-      </nav>
+          <label
+            >E-mail:
+            <input type="email" required placeholder="exemplo@email.com" />
+          </label>
 
-      <section class="content" id="create"></section>
+          <label
+            >Senha:
+            <input
+              type="password" required placeholder="Crie uma senha forte" />
+          </label>
+          <button type="submit">Cadastrar Usuário</button>
+        </form>
+      </section>
 
-      <section class="content" id="read"></section>
+      <!-- SEÇÃO: CONSULTAR USUÁRIOS -->
+      <section>
+        <h2>Consultar Usuários</h2>
+        <form>
+          <label
+            >Buscar por nome ou email:
+            <input
+              type="search" required placeholder="Digite o nome ou email" />
+          </label>
+          <button type="submit">Pesquisar</button>
+        </form>
+      </section>
 
-      <section class="content" id="update"></section>
+      <!-- SEÇÃO: ATUALIZAR DADOS -->
+      <section>
+        <h2>Atualizar Dados</h2>
+        <p>Informe o e-mail do usuário que deseja alterar e os novos dados.</p>
+        <form>
+          <label
+            >E-mail do Usuário Atual:
+            <input type="email" required placeholder="Qual usuário editar?" />
+          </label>
 
-      <section class="content" id="delete"></section>
+          <label>Novo Nome:
+            <input type="text" placeholder="Deixe em branco para não alterar" />
+          </label>
+          <label>Senha:
+            <input type="text" placeholder="Deixe em branco para não alterar" />
+          </label>
+
+          <button type="submit">Atualizar dados</button>
+        </form>
+      </section>
+
+      <!-- SEÇÃO: DELETAR USUÁRIO -->
+      <section>
+        <h2>Deletar Usuário</h2>
+        <form>
+          <label
+            >E-mail do Usuário a deletar:
+            <input type="email" required placeholder="Digite o email exato" />
+          </label>
+
+          <label>
+            <input type="checkbox" required />
+            Estou ciente de que essa ação é irreversível.
+          </label>
+          <div>
+            <button type="submit">Deletar usuário</button>
+          </div>
+        </form>
+      </section>
     </main>
 
+    <!-- RODAPÉ -->
     <footer>
       <p>Sistema HTML Semântico + CSS (Apenas Seletor de Tag) © 2026</p>
     </footer>
