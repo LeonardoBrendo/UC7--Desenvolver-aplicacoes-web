@@ -1,0 +1,441 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistema de Cadastro</title>
+
+    <style>
+      /* RESET BÁSICO */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* SELETOR DE TAG APENAS */
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #f4f6f8;
+        color: #333;
+        line-height: 1.6;
+      }
+
+      header {
+        background-color: #1e3a8a;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        
+
+      }
+
+      nav {
+        margin-top: 10px;
+        
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        margin-right: 20px;
+        font-weight: bold;
+        
+      }
+
+      nav a:hover {
+        text-decoration: underline;
+      }
+
+      main {
+        padding: 30px;
+      }
+
+      section {
+        background-color: white;
+        padding: 20px;
+        margin-bottom: 25px;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      h1 {
+        margin-bottom: 10px;
+      }
+
+      h2 {
+        margin-bottom: 15px;
+        color: #1e3a8a;
+        text-align: center;
+      }
+
+      article {
+        margin-bottom: 15px;
+      }
+
+      form {
+        display: block;
+      }
+
+      fieldset {
+        border: 1px solid #ccc;
+        padding: 20px;
+        border-radius: 6px;
+      }
+
+      legend {
+        font-weight: bold;
+        color: #1e3a8a;
+        padding: 0 10px;
+      }
+
+      label {
+        display: block;
+        margin-top: 15px;
+        font-weight: bold;
+      }
+
+      input {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      select {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+      }
+
+      button {
+        margin-top: 20px;
+        padding: 12px 20px;
+        border: none;
+        background-color: #1e3a8a;
+        color: white;
+        font-size: 16px;
+        border-radius: 6px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #162d6b;
+      }
+
+      footer {
+        background-color: #1e3a8a;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+      }
+
+      aside {
+        background-color: #e0e7ff;
+        padding: 15px;
+        border-radius: 6px;
+        margin-top: 15px;
+      }
+     
+      section {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+
+      section article {
+        border: 2px solid #e0e7ff;
+        padding: 20px;
+        border-radius: 12px;
+        text-align: center;
+        flex: 0 0 calc(25% - 15px);
+        min-width: 200px;
+      }
+
+      section article:hover {
+        border-color: #1e3a8a;
+      }
+
+      section article a {
+        text-decoration: none;
+        color: #333;
+      }
+
+      section article img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 8px;
+        background-color: #e0e7ff;
+      }
+
+      section article h3 {
+        margin: 10px 0 5px 0;
+        color: #1e3a8a;
+        font-size: 14px;
+      }
+
+      section article p {
+        margin: 5px 0;
+        font-size: 13px;
+        color: #555;
+      }
+
+      figcaption {
+        margin-top: 10px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #1e3a8a;
+        min-height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Sistema de Cadastro de Usuários</h1>
+      <nav>
+         <nav style="text-align: center;">
+        <a href="index.html">Dashboard</a>
+        <a href="index.html">Cadastrar</a>
+        <a href="usuarios.html">Usuários</a>
+        <a href="relatorios.html">Relatórios</a>
+        <a href="#">Turmas</a>
+        <a href="cursos.html">Cursos</a>
+        <a href="bolsa.html">Bolsas</a>
+      </nav>
+    </header>
+
+    <main>
+
+    <section>
+      <article>
+          <a href="#">
+            <figure>
+                <img src="imagens/manutencao-celular.jpg" alt="Manutenção de smartphones">
+                <figcaption>Manutenção de smartphones</figcaption>
+            </figure>
+            <h3>Turma A - Manhã</h3>
+            <p>Data: 01/02/2026</p>
+            <p>Cidade: Fortaleza</p>
+            <p style="color: green; font-weight: bold;">Vagas: Aberto</p>
+          </a>
+      </article>
+      <article>
+          <a href="#">
+            <figure>
+                <img src="imagens/manutencao-celular.jpg" alt="Manutenção de smartphones">
+                <figcaption>Manutenção de smartphones</figcaption>
+            </figure>
+            <h3>Turma B - Tarde</h3>
+            <p>Data: 01/02/2026</p>
+            <p>Cidade: Fortaleza</p>
+            <p style="color: red; font-weight: bold;">Vagas: Fechado</p>
+          </a>
+      </article>
+      <article>
+          <a href="#">
+            <figure>
+                <img src="imagens/manutencao-celular.jpg" alt="Manutenção de smartphones">
+                <figcaption>Manutenção de smartphones</figcaption>
+            </figure>
+            <h3>Turma C - Noite</h3>
+            <p>Data: 01/02/2026</p>
+            <p>Cidade: Fortaleza</p>
+            <p style="color: red; font-weight: bold;">Vagas: Fechado</p>
+          </a>
+      </article>
+      <article>
+          <a href="#">
+            <figure>
+                <img src="imagens/engenharia-prompt.jpg" alt="Engenharia de Prompt">
+                <figcaption>Engenharia de Prompt</figcaption>
+            </figure>
+            <h3>Turma A - Manhã</h3>
+            <p>Data: 01/02/2026</p>
+            <p>Cidade: Fortaleza</p>
+            <p style="color: green; font-weight: bold;">Vagas: Aberto</p>
+          </a>
+      </article>
+      <article>
+            <figure>
+                <img src="imagens/engenharia-prompt.jpg" alt="Engenharia de Prompt">
+                <figcaption>Engenharia de Prompt</figcaption>
+            </figure>
+            <h3>Turma B - Tarde</h3>
+            <p>Data: 01/02/2026</p>
+            <p>Cidade: Fortaleza</p>
+            <p style="color: red; font-weight: bold;">Vagas: Fechado</p>
+          </a>
+      </article>
+      <article>
+            <figure>
+                <img src="imagens/engenharia-prompt.jpg" alt="Engenharia de Prompt">
+                <figcaption>Engenharia de Prompt</figcaption>
+            </figure>
+            <h3>Turma C - Noite</h3>
+            <p>Data: 01/02/2026</p>
+            <p>Cidade: Fortaleza</p>
+            <p style="color: green; font-weight: bold;">Vagas: Aberto</p>
+          </a>
+      </article>
+      <article>
+          <a href="#">
+            <figure>
+                <img src="imagens/programacao-python.jpg" alt="Programação em python">
+                <figcaption>Programação em python</figcaption>
+            </figure>
+            <h3>Turma A - Manhã</h3>
+            <p>Data: 01/02/2026</p>
+            <p>Cidade: Fortaleza</p>
+            <p style="color: green; font-weight: bold;">Vagas: Aberto</p>
+          </a>
+      </article>
+      <article>
+          <a href="#">
+            <figure>
+                <img src="imagens/programacao-python.jpg" alt="Programação em python">
+                <figcaption>Programação em python</figcaption>
+            </figure>
+            <h3>Turma B - Tarde</h3>
+            <p>Data: 01/02/2026</p>
+            <p>Cidade: Fortaleza</p>
+            <p style="color: green; font-weight: bold;">Vagas: Aberto</p>
+          </a>
+      </article>
+      <article>
+          <a href="#">
+            <figure>
+                <img src="imagens/programacao-python.jpg" alt="Programação em python">
+                <figcaption>Programação em python</figcaption>
+            </figure>
+            <h3>Turma C - Noite</h3>
+            <p>Data: 01/02/2026</p>
+            <p>Cidade: Fortaleza</p>
+            <p style="color: green; font-weight: bold;">Vagas: Aberto</p>
+          </a>
+      </article>
+      <article>
+          <a href="#">
+            <figure>
+                <img src="imagens/design-vendas.jpg" alt="Design aplicado em vendas">
+                <figcaption>Design aplicado em vendas</figcaption>
+            </figure>
+            <h3>Turma A - Manhã</h3>
+            <p>Data: 01/02/2026</p>
+            <p>Cidade: Fortaleza</p>
+            <p style="color: green; font-weight: bold;">Vagas: Aberto</p>
+          </a>
+      </article>
+      <article>
+          <a href="#">
+            <figure>
+                <img src="imagens/design-vendas.jpg" alt="Design aplicado em vendas">
+                <figcaption>Design aplicado em vendas</figcaption>
+            </figure>
+            <h3>Turma B - Tarde</h3>
+            <p>Data: 01/02/2026</p>
+            <p>Cidade: Fortaleza</p>
+            <p style="color: red; font-weight: bold;">Vagas: Fechado</p>
+          </a>
+      </article>
+      <article>
+          <a href="#">
+            <figure>
+                <img src="imagens/design-vendas.jpg" alt="Design aplicado em vendas">
+                <figcaption>Design aplicado em vendas</figcaption>
+            </figure>
+            <h3>Turma C - Noite</h3>
+            <p>Data: 01/02/2026</p>
+            <p>Cidade: Fortaleza</p>
+            <p style="color: green; font-weight: bold;">Vagas: Aberto</p>
+          </a>
+      </article>
+      <article>
+          <a href="#">
+            <figure>
+                <img src="imagens/excel-copilot.jpg" alt="Excel avançado com ia copilot">
+                <figcaption>Excel avançado com ia copilot</figcaption>
+            </figure>
+            <h3>Turma A - Manhã</h3>
+            <p>Data: 01/02/2026</p>
+            <p>Cidade: Fortaleza</p>
+            <p style="color: green; font-weight: bold;">Vagas: Aberto</p>
+          </a>
+      </article>
+      <article>
+          <a href="#">
+            <figure>
+                <img src="imagens/excel-copilot.jpg" alt="Excel avançado com ia copilot">
+                <figcaption>Excel avançado com ia copilot</figcaption>
+            </figure>
+            <h3>Turma B - Tarde</h3>
+            <p>Data: 01/02/2026</p>
+            <p>Cidade: Fortaleza</p>
+            <p style="color: red; font-weight: bold;">Vagas: Fechado</p>
+          </a>
+      </article>
+      <article>
+          <a href="#">
+            <figure>
+                <img src="imagens/excel-copilot.jpg" alt="Excel avançado com ia copilot">
+                <figcaption>Excel avançado com ia copilot</figcaption>
+            </figure>
+            <h3>Turma C - Noite</h3>
+            <p>Data: 01/02/2026</p>
+            <p>Cidade: Fortaleza</p>
+            <p style="color: green; font-weight: bold;">Vagas: Aberto</p>
+          </a>
+      </article>
+      <article>
+          <a href="#">
+            <figure>
+                <img src="imagens/montador-computador.jpg" alt="Montador e reparador de computadores">
+                <figcaption>Montador e reparador de computadores</figcaption>
+            </figure>
+            <h3>Turma A - Manhã</h3>
+            <p>Data: 01/02/2026</p>
+            <p>Cidade: Fortaleza</p>
+            <p style="color: green; font-weight: bold;">Vagas: Aberto</p>
+          </a>
+      </article>
+      <article>
+          <a href="#">
+            <figure>
+                <img src="imagens/montador-computador.jpg" alt="Montador e reparador de computadores">
+                <figcaption>Montador e reparador de computadores</figcaption>
+            </figure>
+            <h3>Turma B - Tarde</h3>
+            <p>Data: 01/02/2026</p>
+            <p>Cidade: Fortaleza</p>
+            <p style="color: red; font-weight: bold;">Vagas: Fechado</p>
+          </a>
+      </article>
+      <article>
+          <a href="#">
+            <figure>
+                <img src="imagens/montador-computador.jpg" alt="Montador e reparador de computadores">
+                <figcaption>Montador e reparador de computadores</figcaption>
+            </figure>
+            <h3>Turma C - Noite</h3>
+            <p>Data: 01/02/2026</p>
+            <p>Cidade: Fortaleza</p>
+            <p style="color: red; font-weight: bold;">Vagas: Fechado</p>
+          </a>
+      </article>
+    </section>
+    </main>
+
+    <footer>
+      <p>Sistema HTML Semântico + CSS (Apenas Seletor de Tag) © 2026</p>
+    </footer>
+  </body>
+</html>
