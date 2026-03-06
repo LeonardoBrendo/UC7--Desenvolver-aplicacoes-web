@@ -126,36 +126,6 @@
         background-color: #162d6b;
       }
 
-      table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-top: 15px;
-      }
-
-      thead {
-        background-color: #1e3a8a;
-        color: white;
-      }
-
-      th {
-        padding: 12px;
-        text-align: left;
-      }
-
-      td {
-        padding: 12px;
-        border-bottom: 1px solid #ddd;
-      }
-
-      tbody tr:hover {
-        background-color: rgba(15, 90, 165, 0.411);
-      }
-
-      tbody tr:hover td:first-child {
-      color: #1e3a8a;
-      font-weight: bold;
-     }
-
       footer {
         background-color: #1e3a8a;
         color: white;
@@ -172,185 +142,296 @@
         border-radius: 6px;
         margin-top: 15px;
       }
+     
+      section {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+
+      section article {
+        border: 2px solid #e0e7ff;
+        padding: 20px;
+        border-radius: 12px;
+        text-align: center;
+        flex: 0 0 calc(25% - 15px);
+        min-width: 200px;
+      }
+
+      section article:hover {
+        border-color: #1e3a8a;
+      }
+
+      section article a {
+        text-decoration: none;
+        color: #333;
+      }
+
+      section article img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 8px;
+        background-color: #e0e7ff;
+      }
+
+      section article h3 {
+        margin: 10px 0 5px 0;
+        color: #1e3a8a;
+        font-size: 14px;
+      }
+
+      section article p {
+        margin: 5px 0;
+        font-size: 13px;
+        color: #555;
+      }
+
+      figcaption {
+        margin-top: 10px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #1e3a8a;
+        min-height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
     </style>
   </head>
   <body>
     <header>
       <h1>Sistema de Cadastro de Usuários</h1>
       <nav>
-        <a href="#">Dashboard</a>
-        <a href="#">Cadastrar</a>
-        <a href="#">Usuários</a>
-        <a href="#">Relatórios</a>
+         <nav style="text-align: center;">
+        <a href="index.html">Dashboard</a>
+        <a href="index.html">Cadastrar</a>
+        <a href="usuarios.html">Usuários</a>
+        <a href="relatorios.html">Relatórios</a>
+        <a href="#">Turmas</a>
+        <a href="cursos.html">Cursos</a>
+        <a href="bolsa.html">Bolsas</a>
       </nav>
     </header>
 
     <main>
-      
-      <!-- TABELA DE USUÁRIOS -->
-      <section>
-        <h2>Lista de Turmas</h2>
 
-        <table>
-          <thead>
-            <tr>
-              <th>Cursos</th>
-              <th>Turma</th>
-              <th>Turno</th>
-              <th>Datas</th>
-              <th>Cidade</th>
-              <th>Vagas</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Manutenção de smartphones</td>
-              <td>A</td>
-              <td>Manhã</td>
-              <td>01/02/2026</td>
-              <td>Fortaleza</td>
-              <td style="color: green;">aberto</td> 
-            </tr>
-            <tr>
-                <td>Manutenção de smartphones</td>
-                <td>B</td>
-                <td>Tarde</td>
-                <td>01/02/2026</td>
-                <td>Fortaleza</td>
-                <td style="color: red;">fechado</td> 
-              </tr>
-            <tr>
-            <tr>
-                <td>Manutenção de smartphones</td>
-                <td>C</td>
-                <td>Noite</td>
-                <td>01/02/2026</td>
-                <td>Fortaleza</td>
-                <td style="color: red;">fechado</td> 
-                </tr>
-            <tr>
-                <td>Engenharia de Prompt</td>
-                <td>A</td>
-                <td>Manhã</td>
-                <td>01/02/2026</td>
-                <td>Fortaleza</td>
-                <td style="color: green;">aberto</td> 
-            </tr>
-            <tr>
-                <td>Engenharia de Prompt</td>
-                <td>B</td>
-                <td>Tarde</td>
-                <td>01/02/2026</td>
-                <td>Fortaleza</td>
-                <td style="color:red">fechado</td> 
-            </tr>
-            <tr>
-                <td>Engenharia de Prompt</td>
-                <td>C</td>
-                <td>Noite</td>
-                <td>01/02/2026</td>
-                <td>Fortaleza</td>
-                <td style="color: green;">aberto</td> 
-                </tr>
-            <tr>
-                <td>Programação em python</td>
-                <td>A</td>
-                <td>Manhã</td>
-                <td>01/02/2026</td>
-                <td>Fortaleza</td>
-                <td style="color: red;">aberto</td> 
-            </tr>
-            <tr>
-                <td>Programação em python</td>
-                <td>B</td>
-                <td>Tarde</td>
-                <td>01/02/2026</td>
-                <td>Fortaleza</td>
-                <td style="color: red;">aberto</td> 
-            </tr>
-            <tr>
-                <td>Programação em python</td>
-                <td>C</td>
-                <td>Noite</td>
-                <td>01/02/2026</td>
-                <td>Fortaleza</td>
-                <td style="color: red;">aberto</td> 
-            </tr>
-            <tr>
-                <td>Design aplicado em vendas</td>
-                <td>A</td>
-                <td>Manhã</td>
-                <td>01/02/2026</td>
-                <td>Fortaleza</td>
-                <td style="color: green;">aberto</td> 
-            </tr>
-            <tr>
-                <td>Design aplicado em vendas</td>
-                <td>B</td>
-                <td>Tarde</td>
-                <td>01/02/2026</td>
-                <td>Fortaleza</td>
-                <td style="color: red;">fechado</td> 
-            </tr>
-            <tr>
-                <td>Design aplicado em vendas</td>
-                <td>C</td>
-                <td>Noite</td>
-                <td>01/02/2026</td>
-                <td>Fortaleza</td>
-                <td style="color: green;">aberto</td> 
-            </tr>
-            <tr>
-                <td>Excel avançado com ia copilot</td>
-                <td>A</td>
-                <td>Manhã</td>
-                <td>01/02/2026</td>
-                <td>Fortaleza</td>
-                <td style="color: green;">aberto</td> 
-            </tr>
-            <tr>
-                <td>Excel avançado com ia copilot</td>
-                <td>B</td>
-                <td>Tarde</td>
-                <td>01/02/2026</td>
-                <td>Fortaleza</td>
-                <td style="color: red;">fechado</td> 
-            </tr>
-            <tr>
-                <td>Excel avançado com ia copilot</td>
-                <td>C</td>
-                <td>Noite</td>
-                <td>01/02/2026</td>
-                <td>Fortaleza</td>
-                <td style="color: green;">aberto</td> 
-            </tr>
-            <tr>
-                <td>Montador e reparador de computadores</td>
-                <td>A</td>
-                <td>Manhã</td>
-                <td>01/02/2026</td>
-                <td>Fortaleza</td>
-                <td style="color: green;">aberto</td> 
-              </tr>
-              <tr>
-                <td>Montador e reparador de computadores</td>
-                <td>B</td>
-                <td>Tarde</td>
-                <td>01/02/2026</td>
-                <td>Fortaleza</td>
-                <td style="color: red;">fechado</td> 
-              </tr>
-              <tr>
-                <td>Montador e reparador de computadores</td>
-                <td>C</td>
-                <td>Noite</td>
-                <td>01/02/2026</td>
-                <td>Fortaleza</td>
-                <td style="color: red;">fechado</td> 
-              </tr>
-          </tbody>
-        </table>
-      </section>
+    <section>
+      <article>
+          <a href="#">
+            <figure>
+                <img src="imagens/manutencao-celular.jpg" alt="Manutenção de smartphones">
+                <figcaption>Manutenção de smartphones</figcaption>
+            </figure>
+            <h3>Turma A - Manhã</h3>
+            <p>Data: 01/02/2026</p>
+            <p>Cidade: Fortaleza</p>
+            <p style="color: green; font-weight: bold;">Vagas: Aberto</p>
+          </a>
+      </article>
+      <article>
+          <a href="#">
+            <figure>
+                <img src="imagens/manutencao-celular.jpg" alt="Manutenção de smartphones">
+                <figcaption>Manutenção de smartphones</figcaption>
+            </figure>
+            <h3>Turma B - Tarde</h3>
+            <p>Data: 01/02/2026</p>
+            <p>Cidade: Fortaleza</p>
+            <p style="color: red; font-weight: bold;">Vagas: Fechado</p>
+          </a>
+      </article>
+      <article>
+          <a href="#">
+            <figure>
+                <img src="imagens/manutencao-celular.jpg" alt="Manutenção de smartphones">
+                <figcaption>Manutenção de smartphones</figcaption>
+            </figure>
+            <h3>Turma C - Noite</h3>
+            <p>Data: 01/02/2026</p>
+            <p>Cidade: Fortaleza</p>
+            <p style="color: red; font-weight: bold;">Vagas: Fechado</p>
+          </a>
+      </article>
+      <article>
+          <a href="#">
+            <figure>
+                <img src="imagens/engenharia-prompt.jpg" alt="Engenharia de Prompt">
+                <figcaption>Engenharia de Prompt</figcaption>
+            </figure>
+            <h3>Turma A - Manhã</h3>
+            <p>Data: 01/02/2026</p>
+            <p>Cidade: Fortaleza</p>
+            <p style="color: green; font-weight: bold;">Vagas: Aberto</p>
+          </a>
+      </article>
+      <article>
+            <figure>
+                <img src="imagens/engenharia-prompt.jpg" alt="Engenharia de Prompt">
+                <figcaption>Engenharia de Prompt</figcaption>
+            </figure>
+            <h3>Turma B - Tarde</h3>
+            <p>Data: 01/02/2026</p>
+            <p>Cidade: Fortaleza</p>
+            <p style="color: red; font-weight: bold;">Vagas: Fechado</p>
+          </a>
+      </article>
+      <article>
+            <figure>
+                <img src="imagens/engenharia-prompt.jpg" alt="Engenharia de Prompt">
+                <figcaption>Engenharia de Prompt</figcaption>
+            </figure>
+            <h3>Turma C - Noite</h3>
+            <p>Data: 01/02/2026</p>
+            <p>Cidade: Fortaleza</p>
+            <p style="color: green; font-weight: bold;">Vagas: Aberto</p>
+          </a>
+      </article>
+      <article>
+          <a href="#">
+            <figure>
+                <img src="imagens/programacao-python.jpg" alt="Programação em python">
+                <figcaption>Programação em python</figcaption>
+            </figure>
+            <h3>Turma A - Manhã</h3>
+            <p>Data: 01/02/2026</p>
+            <p>Cidade: Fortaleza</p>
+            <p style="color: green; font-weight: bold;">Vagas: Aberto</p>
+          </a>
+      </article>
+      <article>
+          <a href="#">
+            <figure>
+                <img src="imagens/programacao-python.jpg" alt="Programação em python">
+                <figcaption>Programação em python</figcaption>
+            </figure>
+            <h3>Turma B - Tarde</h3>
+            <p>Data: 01/02/2026</p>
+            <p>Cidade: Fortaleza</p>
+            <p style="color: green; font-weight: bold;">Vagas: Aberto</p>
+          </a>
+      </article>
+      <article>
+          <a href="#">
+            <figure>
+                <img src="imagens/programacao-python.jpg" alt="Programação em python">
+                <figcaption>Programação em python</figcaption>
+            </figure>
+            <h3>Turma C - Noite</h3>
+            <p>Data: 01/02/2026</p>
+            <p>Cidade: Fortaleza</p>
+            <p style="color: green; font-weight: bold;">Vagas: Aberto</p>
+          </a>
+      </article>
+      <article>
+          <a href="#">
+            <figure>
+                <img src="imagens/design-vendas.jpg" alt="Design aplicado em vendas">
+                <figcaption>Design aplicado em vendas</figcaption>
+            </figure>
+            <h3>Turma A - Manhã</h3>
+            <p>Data: 01/02/2026</p>
+            <p>Cidade: Fortaleza</p>
+            <p style="color: green; font-weight: bold;">Vagas: Aberto</p>
+          </a>
+      </article>
+      <article>
+          <a href="#">
+            <figure>
+                <img src="imagens/design-vendas.jpg" alt="Design aplicado em vendas">
+                <figcaption>Design aplicado em vendas</figcaption>
+            </figure>
+            <h3>Turma B - Tarde</h3>
+            <p>Data: 01/02/2026</p>
+            <p>Cidade: Fortaleza</p>
+            <p style="color: red; font-weight: bold;">Vagas: Fechado</p>
+          </a>
+      </article>
+      <article>
+          <a href="#">
+            <figure>
+                <img src="imagens/design-vendas.jpg" alt="Design aplicado em vendas">
+                <figcaption>Design aplicado em vendas</figcaption>
+            </figure>
+            <h3>Turma C - Noite</h3>
+            <p>Data: 01/02/2026</p>
+            <p>Cidade: Fortaleza</p>
+            <p style="color: green; font-weight: bold;">Vagas: Aberto</p>
+          </a>
+      </article>
+      <article>
+          <a href="#">
+            <figure>
+                <img src="imagens/excel-copilot.jpg" alt="Excel avançado com ia copilot">
+                <figcaption>Excel avançado com ia copilot</figcaption>
+            </figure>
+            <h3>Turma A - Manhã</h3>
+            <p>Data: 01/02/2026</p>
+            <p>Cidade: Fortaleza</p>
+            <p style="color: green; font-weight: bold;">Vagas: Aberto</p>
+          </a>
+      </article>
+      <article>
+          <a href="#">
+            <figure>
+                <img src="imagens/excel-copilot.jpg" alt="Excel avançado com ia copilot">
+                <figcaption>Excel avançado com ia copilot</figcaption>
+            </figure>
+            <h3>Turma B - Tarde</h3>
+            <p>Data: 01/02/2026</p>
+            <p>Cidade: Fortaleza</p>
+            <p style="color: red; font-weight: bold;">Vagas: Fechado</p>
+          </a>
+      </article>
+      <article>
+          <a href="#">
+            <figure>
+                <img src="imagens/excel-copilot.jpg" alt="Excel avançado com ia copilot">
+                <figcaption>Excel avançado com ia copilot</figcaption>
+            </figure>
+            <h3>Turma C - Noite</h3>
+            <p>Data: 01/02/2026</p>
+            <p>Cidade: Fortaleza</p>
+            <p style="color: green; font-weight: bold;">Vagas: Aberto</p>
+          </a>
+      </article>
+      <article>
+          <a href="#">
+            <figure>
+                <img src="imagens/montador-computador.jpg" alt="Montador e reparador de computadores">
+                <figcaption>Montador e reparador de computadores</figcaption>
+            </figure>
+            <h3>Turma A - Manhã</h3>
+            <p>Data: 01/02/2026</p>
+            <p>Cidade: Fortaleza</p>
+            <p style="color: green; font-weight: bold;">Vagas: Aberto</p>
+          </a>
+      </article>
+      <article>
+          <a href="#">
+            <figure>
+                <img src="imagens/montador-computador.jpg" alt="Montador e reparador de computadores">
+                <figcaption>Montador e reparador de computadores</figcaption>
+            </figure>
+            <h3>Turma B - Tarde</h3>
+            <p>Data: 01/02/2026</p>
+            <p>Cidade: Fortaleza</p>
+            <p style="color: red; font-weight: bold;">Vagas: Fechado</p>
+          </a>
+      </article>
+      <article>
+          <a href="#">
+            <figure>
+                <img src="imagens/montador-computador.jpg" alt="Montador e reparador de computadores">
+                <figcaption>Montador e reparador de computadores</figcaption>
+            </figure>
+            <h3>Turma C - Noite</h3>
+            <p>Data: 01/02/2026</p>
+            <p>Cidade: Fortaleza</p>
+            <p style="color: red; font-weight: bold;">Vagas: Fechado</p>
+          </a>
+      </article>
+    </section>
     </main>
 
     <footer>
