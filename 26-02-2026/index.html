@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistema de Cadastro</title>
+
+    <style>
+      /* RESET BÁSICO */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* SELETOR DE TAG APENAS */
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #f4f6f8;
+        color: #333;
+        line-height: 1.6;
+      }
+
+      header {
+        background-color: #1e3a8a;
+        color: white;
+        padding: 20px;
+      }
+
+      nav {
+        margin-top: 10px;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        margin-right: 20px;
+        font-weight: bold;
+      }
+
+      nav a:hover {
+        text-decoration: underline;
+      }
+
+      main {
+        padding: 30px;
+      }
+
+      section {
+        background-color: white;
+        padding: 20px;
+        margin-bottom: 25px;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      h1 {
+        margin-bottom: 10px;
+      }
+
+      h2 {
+        margin-bottom: 15px;
+        color: #1e3a8a;
+      }
+
+      article {
+        margin-bottom: 15px;
+      }
+
+      form {
+        display: block;
+      }
+
+      fieldset {
+        border: 1px solid #ccc;
+        padding: 20px;
+        border-radius: 6px;
+      }
+
+      legend {
+        font-weight: bold;
+        color: #1e3a8a;
+        padding: 0 10px;
+      }
+
+      label {
+        display: block;
+        margin-top: 15px;
+        font-weight: bold;
+      }
+
+      input {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      select {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+      }
+
+      button {
+        margin-top: 20px;
+        padding: 12px 20px;
+        border: none;
+        background-color: #1e3a8a;
+        color: white;
+        font-size: 16px;
+        border-radius: 6px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #162d6b;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 15px;
+      }
+
+      thead {
+        background-color: #1e3a8a;
+        color: white;
+      }
+
+      th {
+        padding: 12px;
+        text-align: left;
+      }
+
+      td {
+        padding: 12px;
+        border-bottom: 1px solid #ddd;
+      }
+
+      tbody tr:hover {
+        background-color: #f1f5f9;
+      }
+
+      footer {
+        background-color: #1e3a8a;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        margin-top: 30px;
+      }
+
+      aside {
+        background-color: #e0e7ff;
+        padding: 15px;
+        border-radius: 6px;
+        margin-top: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Sistema de Cadastro de Usuários</h1>
+      <nav>
+        <a href="#">Dashboard</a>
+        <a href="#">Cadastrar</a>
+        <a href="#">Usuários</a>
+        <a href="#">Relatórios</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- DASHBOARD -->
+      <section>
+        <h2>Dashboard</h2>
+        <article>
+          <p>
+            Bem-vindo ao sistema. Aqui você pode cadastrar usuários, visualizar
+            registros e gerenciar informações básicas.
+          </p>
+        </article>
+
+        <aside>
+          <p>Total de Usuários: 3</p>
+          <p>Status do Sistema: Ativo</p>
+        </aside>
+      </section>
+
+      <!-- FORMULÁRIO DE CADASTRO -->
+      <section>
+        <h2>Cadastro de Usuário</h2>
+
+        <form>
+          <fieldset>
+            <legend>Dados Pessoais</legend>
+
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" placeholder="Digite seu nome" />
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Digite seu email" />
+
+            <label for="idade">Idade</label>
+            <input type="number" id="idade" placeholder="Digite sua idade" />
+
+            <label for="profissao">Profissão</label>
+            <input
+              type="text"
+              id="profissao"
+              placeholder="Digite sua profissão"
+            />
+
+            <label for="cidade">Cidade</label>
+            <select id="cidade">
+              <option>Selecione</option>
+              <option>Fortaleza</option>
+              <option>São Paulo</option>
+              <option>Rio de Janeiro</option>
+            </select>
+
+            <button type="submit">Cadastrar Usuário</button>
+          </fieldset>
+        </form>
+      </section>
+
+      <!-- TABELA DE USUÁRIOS -->
+      <section>
+        <h2>Lista de Usuários</h2>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Nome</th>
+              <th>Email</th>
+              <th>Idade</th>
+              <th>Profissão</th>
+              <th>Cidade</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Ana Silva</td>
+              <td>ana@email.com</td>
+              <td>25</td>
+              <td>Desenvolvedora</td>
+              <td>Fortaleza</td>
+            </tr>
+            <tr>
+              <td>Carlos Souza</td>
+              <td>carlos@email.com</td>
+              <td>30</td>
+              <td>Analista</td>
+              <td>São Paulo</td>
+            </tr>
+            <tr>
+              <td>Maria Lima</td>
+              <td>maria@email.com</td>
+              <td>28</td>
+              <td>Designer</td>
+              <td>Rio de Janeiro</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <footer>
+      <p>Sistema HTML Semântico + CSS (Apenas Seletor de Tag) © 2026</p>
+    </footer>
+  </body>
+</html>
