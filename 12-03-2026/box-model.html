@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Box model</title>
+        <style>
+            /* RESET BÁSICO */
+            *{
+                margin:0;
+                padding:0;
+                box-sizing:border-box; /* controla width/height incluindo padding e borda */
+            }
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+                background: linear-gradient(120deg,#4facfe,#00f2fe);
+                min-height:100vh;
+                display:flex;
+                flex-direction:column;
+            }
+            header{
+                background:white;
+                padding:20px; /* padding */
+                border-bottom:4px solid #0077ff; /* border */
+            }
+            header h1{
+                text-align:center;
+            }
+
+            /* MENU */
+            nav{
+                margin-top:10px; /* margin */
+                text-align:center;
+            }
+
+            nav a{
+                text-decoration:none;
+                margin:0 15px; /* margin */
+                color:#0077ff;
+                font-weight:bold;
+            }
+            main{
+                width:80%; /* width */
+                max-width:1000px;
+                margin:40px auto; /* margin */
+            }
+            section{
+                background:white;
+
+                width:100%; /* width */
+                height:auto; /* height */
+
+                padding:25px; /* padding */
+                border:3px solid #0077ff; /* border */
+                margin-bottom:25px; /* margin */
+
+                border-radius:10px;
+
+                box-shadow:0 10px 20px rgba(0,0,0,0.15);
+            }
+            section h2{
+                margin-bottom:10px;
+            }
+
+            /* RODAPÉ */
+            footer{
+                margin-top:auto;
+                background:#111;
+                color:white;
+                text-align:center;
+                padding:15px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Projeto Demonstrando Box Model</h1>
+            <nav>
+                <a href="#">Início</a>
+                <a href="#">Serviços</a>
+                <a href="#">Contato</a>
+            </nav>
+        </header>
+        <main>
+
+            <section>
+                <h2>Conteúdo</h2>
+                <p>
+                    Este é o conteúdo da caixa. No modelo de caixas do CSS,
+                    o conteúdo é a parte interna onde o texto ou elementos aparecem.
+                </p>
+            </section>
+
+            <section>
+                <h2>Padding</h2>
+                <p>
+                    O padding é o espaço interno entre o conteúdo e a borda da caixa.
+                    Neste projeto usamos <strong>padding: 25px</strong>.
+                </p>
+            </section>
+
+            <section>
+                <h2>Border</h2>
+                <p>
+                    A borda envolve o padding e o conteúdo. Aqui usamos
+                    <strong>border: 3px solid</strong> para destacar cada seção.
+                </p>
+            </section>
+
+            <section>
+                <h2>Margin</h2>
+                <p>
+                    A margem é o espaço externo entre uma caixa e outra.
+                    Usamos <strong>margin-bottom</strong> para separar as seções.
+                </p>
+            </section>
+
+        </main>
+
+        <footer>
+            <p>Projeto HTML + CSS no mesmo arquivo</p>
+        </footer>
+
+    </body>
+</html>

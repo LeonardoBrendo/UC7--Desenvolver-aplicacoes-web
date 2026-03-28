@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2::before{
+            content: "★ ";
+            color: #ff9800;;
+        }
+        .link-externo::after{
+            content: " (link externo)";
+            color: #ff5722;
+            font-size: 0.9em;
+        }
+       p::selection {
+            background: #ff9800;
+            color: rgb(166, 18, 18);
+       }
+       .botao {
+            background-color: #2ecc71;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 4px;
+            box-shadow: 0 4px 0 #27ae60;
+            transition: all 0.05s;
+        }
+
+        .botao:active {
+            transform: translateY(4px);
+            box-shadow: 0 0 0 #27ae60;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sobre o projeto</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Sobre o Projeto</h2>
+            <div>
+                <p style="background-color: red;">
+                Este projeto demonstra o uso de pseudo-elementos em CSS. Eles permitem
+                estilizar partes específicas de um elemento.
+                </p>
+                <p style="background-color: yellow;">
+                Este projeto demonstra o uso de pseudo-elementos em CSS. Eles permitem
+                estilizar partes específicas de um elemento.
+                </p>
+            </div>
+        </section>
+        <section>
+            <h2>Exemplo de Texto</h2>
+            <p>
+            Os pseudo-elementos são muito úteis para criar efeitos visuais
+            interessantes sem precisar alterar o HTML. Eles ajudam a melhorar o
+            design e a organização da página de forma simples.
+            </p>
+            <p>
+                <a class="link-externo" href="https://www.google.com" target="_blank">Ir para o Google</a>
+            </p>
+        <button class="botao">Clique aqui</button>
+        </section>
+    </main>
+    <footer>
+        <p>Projeto HTML + CSS usando pseudo-elementos</p>
+    </footer>
+</body>
+</html>
