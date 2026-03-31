@@ -1,31 +1,52 @@
-const citacoes = [
-    { texto: "O sucesso é a soma de pequenos esforços repetidos dia após dia.", autor: "Robert Collier" },
-    { texto: "Acredite em si mesmo e todo o resto será possível.", autor: "Desconhecido" },
-    { texto: "Não espere por oportunidades, crie você mesmo as suas.", autor: "Desconhecido" },
-    { texto: "O fracasso é a oportunidade de começar de novo com mais inteligência.", autor: "Henry Ford" },
-    { texto: "Sonhe grande, trabalhe duro e nunca desista.", autor: "Desconhecido" },
-    { texto: "A única maneira de fazer um excelente trabalho é amar o que você faz.", autor: "Steve Jobs" },
-    { texto: "O futuro pertence àqueles que acreditam na beleza de seus sonhos.", autor: "Eleanor Roosevelt" },
-    { texto: "Se você pode sonhar, você pode realizar.", autor: "Walt Disney" }
-]
+let numeroSecreto = Math.floor(Math.random() * 10) + 1;
+let tentativas = 0;
 
-let ultimoIndice = -1;
+const palpiteInput = document.getElementById("palpite");
+const btnChutar = document.getElementById("btnChutar");
+const mensagemDiv = document.getElementById("mensagem");
+const contadorSpan = document.getElementById("contador");
+const btnNovoJogo = document.getElementById("btnNovoJogo");
 
-const citacaoDiv = document.getElementById("citacao");
-const autorDiv = document.getElementById("autor");
-const novaCitacaoBtn = document.getElementById("btnGerar");
+function chutar() {
+    const palpite = Number(palpiteInput.value);
 
-function gerarCitacao() {
-    let novoIndice;
-    do {
-        novoIndice = Math.floor(Math.random() * citacoes.length);
-    } while (novoIndice === ultimoIndice && citacoes.length > 1);
+    if (!palpite || palpite < 1 || palpite > 100) {
+        mensagemDiv.textContent = "Por favor, insira um número entre 1 e 100.";
+        return false;
+    }
 
-    ultimoIndice = novoIndice;
-    const citacao = citacoes[novoIndice];
-    citacaoDiv.textContent = `"${citacao.texto}"`;
-    autorDiv.textContent = `+ ${citacao.autor}`;
+    tentativas++;
+    contadorSpan.textContent = tentativas;
+
+    if (palpite === numeroSecreto) {
+        mensagemDiv.textContent = `Parabéns! Você acertou o número secreto ${numeroSecreto} em ${tentativas} tentativas!`;
+        btnChutar.disabled = true;
+        btnNovoJogo.style.display = "inline-block";
+    } else if (palpite < numeroSecreto) {
+        mensagemDiv.textContent = "Tente um número maior!";
+    } else {
+        mensagemDiv.textContent = "Tente um número menor!";
+    }
+
+    palpiteInput.value = "";
+    palpiteInput.focus();
 }
 
-gerarCitacao();
-novaCitacaoBtn.addEventListener("click", gerarCitacao);
+function novoJogo() {
+    numeroSecreto = Math.floor(Math.random() * 10) + 1;
+    tentativas = 0;
+    contadorSpan.textContent = tentativas;
+    mensagemDiv.textContent = "";
+    btnChutar.disabled = false;
+    btnNovoJogo.style.display = "none";
+    palpiteInput.value = "";
+    palpiteInput.focus();
+}
+
+btnChutar.addEventListener("click", chutar);
+btnNovoJogo.addEventListener("click", novoJogo);
+palpiteInput.addEventListener("keypress", function(event) {
+    if (event.key === "Enter") {
+        chutar();
+    }   
+});
