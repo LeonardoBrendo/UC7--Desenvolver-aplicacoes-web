@@ -16,7 +16,7 @@ app.use(express.static('../frontend'));
 app.get('/api/carros', async (req, res) => {
     try {
         const result = await db.query('SELECT * FROM carros ORDER BY id');
-        res.json(result.rows);
+        res.status(200).json(result.rows);
     } catch (error) {
         console.error('Erro ao buscar carros:', error);
         res.status(500).json({ error: 'Erro ao buscar carros' });
