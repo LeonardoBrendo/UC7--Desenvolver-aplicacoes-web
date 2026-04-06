@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Sistema de Gerenciamento de Carros</title>
+    <link rel="stylesheet" href="/css/login.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-card">
+            <div class="login-header">
+                <div class="logo">🚗</div>
+                <h1>Sistema de Gerenciamento</h1>
+                <p>Faça login para acessar o sistema</p>
+            </div>
+
+            <form id="loginForm" class="login-form">
+                <div class="form-group">
+                    <label for="username">
+                        <span class="icon">👤</span> Usuário
+                    </label>
+                    <input type="text" 
+                           id="username" 
+                           name="username"
+                           placeholder="Digite seu usuário"
+                           autocomplete="off"
+                           required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">
+                        <span class="icon">🔒</span> Senha
+                    </label>
+                    <div class="password-wrapper">
+                        <input type="password" 
+                               id="password" 
+                               name="password"
+                               placeholder="Digite sua senha"
+                               required>
+                        <button type="button" class="toggle-password" id="togglePassword">
+                            👁️
+                        </button>
+                    </div>
+                </div>
+
+                <div class="form-options">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="rememberMe">
+                        <span>Lembrar-me</span>
+                    </label>
+                    <a href="#" class="forgot-password">Esqueceu a senha?</a>
+                </div>
+
+                <button type="submit" class="btn-login">
+                    Entrar no Sistema
+                </button>
+
+                <div class="demo-credentials">
+                    <p>🔐 Credenciais de Demonstração:</p>
+                    <div class="credentials-grid">
+                        <div class="credential">
+                            <strong>Administrador</strong>
+                            <span>admin / admin123</span>
+                        </div>
+                        <div class="credential">
+                            <strong>Usuário Comum</strong>
+                            <span>user / user123</span>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+            <div class="login-footer">
+                <p>&copy; 2024 - Sistema de Gerenciamento de Carros. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/auth.js"></script>
+</body>
+</html>
